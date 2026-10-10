@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    padding: 0 12%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+.logo{
+    font-weight: bold;
+    font-size: 72px;
+    color: green;
+}
+.menu a{
+    color: burlywood;
+    transition: 0.5s;
+}
+.menu a:hover{
+    color: coral;
+}
+.menu ul{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: burlywood;
+    font-size: 12px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: coral;
+}
+.home{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    color: chocolate;
+}
+.home h4{
+    line-height: 25px;
+}
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+.images img{
+    width: 20%;
+    height: 350px;
+    object-fit: cover;
+    transition: 0.5s;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.images img:hover{
+    width: 30%;
+}
+@keyframes bouger{
+    from{
+        transform: translateX(0)
+    }
+    to{
+        transform: translateX(1000px);
+    }
+}
+.bouge{
+    animation: bouger;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.bouge{
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+}
+.galerie{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.carte{
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+.carte img{
+    width: 90%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.carte figcaption{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+.carte img:hover{
+    width: 100%;
+}
